@@ -1,0 +1,283 @@
+body {
+  background-color: #000000;
+  color: #fff;
+  margin: 0;
+  padding-top: 53px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1230px;
+}
+
+.logo-link {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 5px 20px;
+  transition: all 0.3s;
+}
+
+.logo-link:hover {
+  border: 1px solid #fff;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.item-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+.secondary-menu .item-link {
+  color: #808080;
+}
+
+.secondary-menu .item:last-child .item-link {
+  margin-right: 0;
+}
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.title {
+  font-size: 64px;
+  line-height: calc(75 / 64);
+  text-transform: capitalize;
+  margin-bottom: 26px;
+  margin-top: 0;
+}
+
+.description {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: lowercase;
+  max-width: 268px;
+  text-align: center;
+}
+
+.description::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 60px;
+  background-color: #fff;
+  margin: 26px auto 0;
+}
+
+.vidbg-box {
+  height: 750px;
+  width: 90%;
+  margin: auto;
+  max-width: 1230px;
+}
+
+.features {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1230px;
+  padding: 100px 0;
+  position: relative;
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.table {
+  margin-bottom: 200px;
+}
+
+.table-column {
+  width: 300px;
+  padding: 5px 0;
+  font-size: 18px;
+  line-height: 179.69%;
+  /*text-transform: lowercase;*/
+}
+
+.table-column span {
+  color: #b2b0b2;
+}
+
+.table-column:first-child {
+  text-transform: uppercase;
+}
+
+.features-text {
+  max-width: 490px;
+  font-size: 16px;
+  line-height: calc(29 / 16);
+}
+
+.rocket {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 11;
+  max-width: 300px;
+}
+
+.footer {
+  padding: 130px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-nav {
+  margin: 43px 0 28px;
+}
+
+.footer-nav .item-link {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.footer-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.footer-link {
+  color: #808080;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 20px 85px;
+  transition: all 0.4s;
+}
+
+.footer-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@media (max-width: 960px) {
+  .rocket {
+    max-width: 200px;
+  }
+
+  .table-column {
+    width: 200px;
+    font-size: 16px;
+    line-height: 179.69%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logo-link {
+    margin-bottom: 20px;
+  }
+
+  .main-nav {
+    margin-bottom: 20px;
+  }
+
+  .rocket {
+    max-width: 160px;
+  }
+
+  .vidbg-box {
+    width: 100%;
+  }
+
+  .footer-nav .list {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .footer-nav .item {
+    margin-bottom: 10px;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding-top: 20px;
+  }
+
+  .hero,
+  .features {
+    padding: 40px 0;
+  }
+
+  .rocket {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .table {
+    margin-bottom: 20px;
+  }
+
+  .table-column {
+    width: 150px;
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer-nav .list {
+    max-width: 90%;
+  }
+
+  .footer-nav .item-link {
+    font-size: 16px;
+    margin: 0 6px;
+  }
+}
